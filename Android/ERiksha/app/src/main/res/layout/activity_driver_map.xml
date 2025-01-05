@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverMapActivity">
+
+    <fragment
+        android:id="@+id/driverMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageView
+        android:id="@+id/driverHamPopupMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:src="@drawable/navigation_icon"/>
+
+    <LinearLayout
+        android:id="@+id/incomingRequestLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/incomingRequestsRecyclerView"
+            android:paddingTop="5dp"
+            android:background="#F0F0F0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:background="#F0F0F0"
+           android:paddingRight="10dp"
+           android:layout_gravity="end"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="See more"
+               android:gravity="center"
+               android:textColor="@color/black"
+               android:textSize="14dp" />
+
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_gravity="center"
+               android:src="@drawable/ic_right_arrow" />
+
+       </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
