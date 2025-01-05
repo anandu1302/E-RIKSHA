@@ -70,7 +70,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:value="AIzaSyClnIOLC-x_Fs0vuEviwRufmran0eGfZoo" />
 
         <activity
             android:name=".RequestBookingActivity"
